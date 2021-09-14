@@ -1,0 +1,32 @@
+title: topoor的垃圾桶
+desciption: >
+  A jekyll theme for personal website.
+email: 1239323088@qq.com
+baseurl: "https://github.com/topoor/topoor2.github.io.git" # the subpath of your site, e.g. /blog
+#replace nrdybhu1.github.io with your domainname.com
+url: "https://nrdybhu1.github.io" # the base hostname & protocol for your site
+github_username:  topoor
+markdown: kramdown
+page_excerpts: true
+favicon: "/img/atlas.png"
+collections:
+  posts:
+    permalink: "/blog/:title:output_ext"
+    output: true
+defaults:
+- scope:
+    path: _posts
+    type: posts
+- scope:
+    path: ''
+  values:
+    image: "/img/preview.png"
+plugins:
+- jekyll-avatar
+- jekyll-feed
+- jekyll-redirect-from
+- jemoji
+- jekyll-paginate
+#分页，每页显示文章数
+paginate: 5
+paginate_path: "/blog/page-:num/"
